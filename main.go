@@ -53,6 +53,8 @@ func check(e error) {
 
 func main() {
 
+	flag.Parse()
+
 	log.Println("Inventory Parser")
 	log.Printf("Everquest Directory: %s\n", *everquestDirectory)
 

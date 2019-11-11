@@ -1,0 +1,4 @@
+id,name
+17005,Backpack
+17902,Toolbox
+13073,Bone Chips

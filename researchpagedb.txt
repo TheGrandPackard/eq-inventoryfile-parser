@@ -1,25 +1,25 @@
 id,name,class
+11700,Velishoul's Tome Pg. 108,Enchanter
+11701,Faded Velishoul's Tome Page,Enchanter
+11702,Velishoul's Tome Pg. 109,Enchanter
+11704,Salil's Writ Pg. 60,Enchanter
+11705,Salil's Writ Pg. 64,Enchanter
 11706,Faded Salil's Writ Page,Enchanter
+11707,Salil's Writ Pg. 64,Enchanter
+11708,Salil's Writ Pg. 90,Enchanter
+11709,Salil's Writ Pg. 90,Enchanter
 11710,Faded Salil's Writ Page,Enchanter
+11711,Salil's Writ Pg. 153,Enchanter
 11712,Faded Salil's Writ Page,Enchanter
+11713,Salil's Writ Pg. 153,Enchanter
+11714,Salil's Writ Pg. 174,Enchanter
+11715,Salil's Writ Pg. 174,Enchanter
+11716,Salil's Writ Pg. 282,Enchanter
+11717,Salil's Writ Pg. 282,Enchanter
+11718,Salil's Writ Pg. 288,Enchanter
+11719,Salil's Writ Pg. 288,Enchanter
 11720,Faded Salil's Writ Page,Enchanter
 11721,Faded Salil's Writ Page,Enchanter
-11701,Faded Velishoul's Tome Page,Enchanter
-16084,Faded Velishoul's Tome Page,Enchanter
-16068,Part of Tasarin's Grimoire Pg. 23,Enchanter
-16069,Part of Tasarin's Grimoire Pg. 23,Enchanter
-16070,Part of Tasarin's Grimoire Pg. 24,Enchanter
-16071,Part of Tasarin's Grimoire Pg. 24,Enchanter
-16072,Part of Tasarin's Grimoire Pg. 26,Enchanter
-16073,Part of Tasarin's Grimoire Pg. 26,Enchanter
-16074,Part of Tasarin's Grimoire Pg. 30,Enchanter
-16075,Part of Tasarin's Grimoire Pg. 30,Enchanter
-16076,Part of Tasarin's Grimoire Pg. 312,Enchanter
-16077,Part of Tasarin's Grimoire Pg. 312,Enchanter
-16078,Part of Tasarin's Grimoire Pg. 375,Enchanter
-16079,Part of Tasarin's Grimoire Pg. 375,Enchanter
-16080,Part of Tasarin's Grimoire Pg. 390,Enchanter
-16081,Part of Tasarin's Grimoire Pg. 390,Enchanter
 11722,Nilitim's Grimoire Pg. 35,Enchanter
 11723,Nilitim's Grimoire Pg. 36,Enchanter
 11724,Nilitim's Grimoire Pg. 115,Enchanter
@@ -36,8 +36,106 @@ id,name,class
 11735,Nilitim's Grimoire Pg. 416,Enchanter
 11736,Nilitim's Grimoire Pg. 449,Enchanter
 11737,Nilitim's Grimoire Pg. 450,Enchanter
+11738,Rune of Falhalem,Wizard
+11739,Rune of Substance,Wizard
+11740,Rune of Periphery,Wizard
+11741,Rune of Fulguration,Wizard
+11742,Rune of Proximity,Wizard
+11743,Rune of Neglect,Wizard
+11744,Rune of Oppression,Wizard
+11745,Rune of Velious,Wizard
+11746,Rune of Al'Kabor,Wizard
+11747,Rune of Expulsion,Wizard
+11748,Rune of Attraction,Wizard
+11749,Rune of Presence,Wizard
+11750,Rune of Disassociation,Wizard
+11751,Rune of Trauma,Wizard
+11752,Rune of Xegony,Wizard
+11753,Rune of Karana,Wizard
+11754,Rune of the Combine,Wizard
+11755,Rune of Dismemberment,Wizard
+11756,Rune of Regeneration,Wizard
+11757,Rune of Rallos Zek,Wizard
+11758,Rune of the Helix,Wizard
+11761,Rune of Sorcery,Wizard
+11763,Rune of Concussion,Wizard
+11765,Rune of the Catalyst,Wizard
+11767,Rune of the Cyclone,Wizard
+11768,Rune of Howling,Wizard
+11769,Rune of Contortion,Wizard
+11770,Rune of Petrification,Wizard
+11772,Rune of Paralysis,Wizard
+11774,Rune of Conception,Wizard
+11775,Rune of Infraction,Wizard
+11786,Glove of Rallos Zek,Magician
+11787,Words of Dominion,Magician
+11788,Words of Dimension,Magician
+11789,Ice of Velious,Magician
+11790,Jade Shard,Magician
+11791,Pearl Shard,Magician
+11792,Words of Transcendence,Magician
+11793,Words of Sight,Magician
+11794,Words of Coercion,Magician
+11795,Eye of Serilis,Magician
+11796,Words of Tyranny,Magician
+11797,Flame of Vox,Magician
+11798,Words of the Element,Magician
+11799,Words of Duress,Magician
+11801,Breath of Solusek,Magician
+11802,The Scent of Marr,Magician
+11803,Words of Collection (Azia),Magician
+11810,Words of Eradication,Necromancer
+11811,Words of Imitation,Necromancer
+11812,Words of Dissolution,Necromancer
+11813,Words of Materials,Necromancer
+11814,Words of Spirit,Necromancer
+11815,Words of Possession,Necromancer
+11816,Words of the Spoken,Necromancer
+11817,Words of Reviviscence,Necromancer
+11818,Words of the Sentient (Azia),Necromancer
+11819,Words of Refuge,Necromancer
+11820,Words of Absorption,Necromancer
+11821,Words of Enlightenment,Necromancer
+11822,Words of Anthology,Necromancer
+11823,Words of Discernment,Necromancer
+11824,Words of Radiance,Necromancer
+11825,Words of the Extinct,Necromancer
+11826,Words of the Quickening,Necromancer
+11827,Words of Eventide,Necromancer
+11829,Words of Allure,Necromancer
+11831,Words of the Sentient (Beza),Necromancer
+11832,Words of Recluse,Necromancer
+11833,Words of Cloudburst,Necromancer
+11835,Words of Detachment,Necromancer
+11836,Words of Haunting,Necromancer
+11840,Words of Acquisition (Azia),Necromancer
+11842,Words of Parasitism,Necromancer
+11849,Words of Efficacy,Necromancer
+11852,Words of Descrying,Necromancer
+11856,Words of the Spectre,Necromancer
+11871,Words of Detention,Magician
+11882,Salil's Writ Pg. 60,Enchanter
+15498,Spell: Lesser Summoning: Fire,Magician
+16024,Words of Derivation,Necromancer
+16039,Words of Cazic-Thule,Necromancer
+16054,Rune of Nagafen,Wizard
+16068,Part of Tasarin's Grimoire Pg. 23,Enchanter
+16069,Part of Tasarin's Grimoire Pg. 23,Enchanter
+16070,Part of Tasarin's Grimoire Pg. 24,Enchanter
+16071,Part of Tasarin's Grimoire Pg. 24,Enchanter
+16072,Part of Tasarin's Grimoire Pg. 26,Enchanter
+16073,Part of Tasarin's Grimoire Pg. 26,Enchanter
+16074,Part of Tasarin's Grimoire Pg. 30,Enchanter
+16075,Part of Tasarin's Grimoire Pg. 30,Enchanter
+16076,Part of Tasarin's Grimoire Pg. 312,Enchanter
+16077,Part of Tasarin's Grimoire Pg. 312,Enchanter
+16078,Part of Tasarin's Grimoire Pg. 375,Enchanter
+16079,Part of Tasarin's Grimoire Pg. 375,Enchanter
+16080,Part of Tasarin's Grimoire Pg. 390,Enchanter
+16081,Part of Tasarin's Grimoire Pg. 390,Enchanter
 16082,Velishoul's Tome Pg. 8,Enchanter
 16083,Velishoul's Tome Pg. 9,Enchanter
+16084,Faded Velishoul's Tome Page,Enchanter
 16085,Velishoul's Tome Pg. 16,Enchanter
 16086,Velishoul's Tome Pg. 17,Enchanter
 16087,Velishoul's Tome Pg. 43,Enchanter
@@ -46,73 +144,4 @@ id,name,class
 16091,Velishoul's Tome Pg. 68,Enchanter
 16092,Velishoul's Tome Pg. 75,Enchanter
 16093,Velishoul's Tome Pg. 76,Enchanter
-11700,Velishoul's Tome Pg. 108,Enchanter
-11702,Velishoul's Tome Pg. 109,Enchanter
-11704,Salil's Writ Pg. 60,Enchanter
-11705,Salil's Writ Pg. 64,Enchanter
-11707,Salil's Writ Pg. 64,Enchanter
-11708,Salil's Writ Pg. 90,Enchanter
-11709,Salil's Writ Pg. 90,Enchanter
-11711,Salil's Writ Pg. 153,Enchanter
-11713,Salil's Writ Pg. 153,Enchanter
-11714,Salil's Writ Pg. 174,Enchanter
-11715,Salil's Writ Pg. 174,Enchanter
-11716,Salil's Writ Pg. 282,Enchanter
-11717,Salil's Writ Pg. 282,Enchanter
-11718,Salil's Writ Pg. 288,Enchanter
-11719,Salil's Writ Pg. 288,Enchanter
-11882,Salil's Writ Pg. 60,Enchanter
-11786,Glove of Rallos Zek,Magician
-11803,Words of Collection (Azia),Magician
-11871,Words of Detention,Magician
-11788,Words of Dimension,Magician
-11787,Words of Dominion,Magician
-11798,Words of the Element,Magician
-11796,Words of Tyranny,Magician
-11820,Words of Absorption,Necromancer
-11829,Words of Allure,Necromancer
-11822,Words of Anthology,Necromancer
-16039,Words of Cazic-Thule,Necromancer
-11833,Words of Cloudburst,Necromancer
-16024,Words of Derivation,Necromancer
-11852,Words of Descrying,Necromancer
-11835,Words of Detachment,Necromancer
-11823,Words of Discernment,Necromancer
-11812,Words of Dissolution,Necromancer
-11821,Words of Enlightenment,Necromancer
-11810,Words of Eradication,Necromancer
-11827,Words of Eventide,Necromancer
-11811,Words of Imitation,Necromancer
-11813,Words of Materials,Necromancer
-11815,Words of Possession,Necromancer
-11824,Words of Radiance,Necromancer
-11832,Words of Recluse,Necromancer
-11819,Words of Refuge,Necromancer
-11817,Words of Reviviscence,Necromancer
-11814,Words of Spirit,Necromancer
-11825,Words of the Extinct,Necromancer
-11826,Words of the Quickening,Necromancer
-11818,Words of the Sentient (Azia),Necromancer
-11831,Words of the Sentient (Beza),Necromancer
-11856,Words of the Spectre,Necromancer
-11816,Words of the Spoken,Necromancer
-11746,Rune of Al'Kabor,Wizard
-11748,Rune of Attraction,Wizard
-11774,Rune of Conception,Wizard
-11750,Rune of Disassociation,Wizard
-11747,Rune of Expulsion,Wizard
-11738,Rune of Falhalem,Wizard
-11741,Rune of Fulguration,Wizard
-11753,Rune of Karana,Wizard
-16054,Rune of Nagafen,Wizard
-11743,Rune of Neglect,Wizard
-11744,Rune of Oppression,Wizard
-11740,Rune of Periphery,Wizard
-11749,Rune of Presence,Wizard
-11742,Rune of Proximity,Wizard
-11756,Rune of Regeneration,Wizard
-11739,Rune of Substance,Wizard
-11754,Rune of the Combine,Wizard
-11751,Rune of Trauma,Wizard
-11745,Rune of Velious,Wizard
-11752,Rune of Xegony,Wizard
+11834,Words of Mistbreath,Necromancer

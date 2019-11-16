@@ -109,20 +109,55 @@ func main() {
 
 	log.Printf("Found %d Research Items\n", len(researchPages))
 
-	sort.Slice(researchPages, func(i, j int) bool { return researchPages[i].Name < researchPages[j].Name })
+	// Sort into buckets by class then dump report by class
+	sort.Slice(researchPages, func(i, j int) bool {
+
+		if researchPages[i].Class < researchPages[j].Class {
+			return true
+		}
+		if researchPages[i].Class > researchPages[j].Class {
+			return false
+		}
+
+		return researchPages[i].Name < researchPages[j].Name
+	})
+
+	classPages := map[Class][]ResearchItem{}
 
 	for _, researchPage := range researchPages {
+		classPages[researchPage.Class] = append(classPages[researchPage.Class], researchPage)
+	}
+
+	fmt.Printf("\n==== Enchanter Pages ====\n")
+	for _, researchPage := range classPages[Enchanter] {
 		if strings.HasPrefix(researchPage.Name, "Part of ") {
+			// TODO: Feature: Fix the left/right logic because it doesn't work for even/odd
 			if researchPage.ID%2 == 0 {
-				fmt.Printf("%dx\t%s (Left)\t[Enchanter]\n", researchPage.Qty, researchPage.Name)
+				fmt.Printf("%dx\t%s (Left)\n", researchPage.Qty, researchPage.Name)
 			} else {
-				fmt.Printf("%dx\t%s (Right)\t[Enchanter]\n", researchPage.Qty, researchPage.Name)
+				fmt.Printf("%dx\t%s (Right)\n", researchPage.Qty, researchPage.Name)
 			}
 		} else if strings.Contains(researchPage.Name, "Faded") {
-			fmt.Printf("%dx\t%s (%d)\t[Enchanter]\n", researchPage.Qty, researchPage.Name, researchPage.ID)
+			// TODO: Feature: Translate the ID to whichever page it corresponds to
+			fmt.Printf("%dx\t%s (%d)\n", researchPage.Qty, researchPage.Name, researchPage.ID)
 		} else {
-			fmt.Printf("%dx\t%s\t[%s]\n", researchPage.Qty, researchPage.Name, researchPage.Class)
+			fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
 		}
+	}
+
+	fmt.Printf("\n==== Magician Pages ====\n\n")
+	for _, researchPage := range classPages[Magician] {
+		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+	}
+
+	fmt.Printf("\n==== Necromancer Pages ====\n\n")
+	for _, researchPage := range classPages[Necromancer] {
+		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+	}
+
+	fmt.Printf("\n==== Wizard Pages ====\n\n")
+	for _, researchPage := range classPages[Wizard] {
+		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
 	}
 }
 
@@ -169,12 +204,15 @@ func parseFile(characterName string, class Class) (respitems []ResearchItem, err
 		if researchItem, ok := researchPageDBMap[id]; ok {
 
 			if researchItem.Class != class {
-				log.Printf("WARNING: %s has wrong class research item: %s\n", characterName, researchItem.Name)
+				log.Printf("WARNING: %s has wrong class research item: %s [%s]\n", characterName, name, researchItem.Class)
 			}
 
 			// Get item from local map if exists
 			if item, ok := researchItems[id]; ok {
 				item.Qty += qty
+				if !strings.HasPrefix(name, "Spell: ") {
+					log.Printf("WARNING: Duplicate stack of item: %s on character: %s\n", name, characterName)
+				}
 			} else {
 				researchItem.Qty += qty
 				researchItems[id] = &researchItem
@@ -183,7 +221,6 @@ func parseFile(characterName string, class Class) (respitems []ResearchItem, err
 		} else {
 			log.Printf("ERROR: No item in database for ID: %d\n", id)
 		}
-
 	}
 
 	for _, researchItem := range researchItems {

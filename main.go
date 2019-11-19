@@ -12,20 +12,6 @@ import (
 	"github.com/gocarina/gocsv"
 )
 
-var (
-	everquestDirectory = flag.String("eqdirectory", "C:\\Users\\thegr\\Desktop\\Project1999", "Everquest Directory")
-
-	researchEnchanterName   = "Researchchanter"
-	researchMagicianName    = "Researchmage"
-	researchNecromancerName = "Researchnecro"
-	researchWizardName      = "Researchwizard"
-
-	researchPageDB     = []ResearchItem{}
-	researchPageDBMap  = map[int]ResearchItem{}
-	blacklistItemDB    = []BlacklistItem{}
-	blacklistItemDBMap = map[int]BlacklistItem{}
-)
-
 type Class string
 
 var Enchanter Class = "Enchanter"
@@ -45,6 +31,16 @@ type BlacklistItem struct {
 	Name string `csv:"name"`
 }
 
+var (
+	everquestDirectory = flag.String("eqdirectory", "C:\\Users\\thegr\\Desktop\\Project1999", "Everquest Directory")
+	characterNames     = flag.String("characters", "Researchchanter:Enchanter,Researchmage:Magician,Researchnecro:Necromancer,Researchwizard:Wizard", "Character inventory files to parse")
+
+	researchPageDB     = []ResearchItem{}
+	researchPageDBMap  = map[int]ResearchItem{}
+	blacklistItemDB    = []BlacklistItem{}
+	blacklistItemDBMap = map[int]BlacklistItem{}
+)
+
 func check(e error) {
 	if e != nil {
 		panic(e)
@@ -57,6 +53,7 @@ func main() {
 
 	log.Println("Inventory Parser")
 	log.Printf("Everquest Directory: %s\n", *everquestDirectory)
+	log.Printf("Characters: %s\n", *characterNames)
 
 	// Load research pages database file
 	researchpageDBData, err := ioutil.ReadFile("researchpagedb.txt")
@@ -87,25 +84,21 @@ func main() {
 	// Read in inventory files
 	researchPages := []ResearchItem{}
 
-	// Read Enchanter character
-	enchanterPages, err := parseFile(researchEnchanterName, Enchanter)
-	check(err)
-	researchPages = append(researchPages, enchanterPages...)
+	// Read character inventory files
+	characterNamesSplit := strings.Split(*characterNames, ",")
 
-	// // Read Magician character
-	magicianPages, err := parseFile(researchMagicianName, Magician)
-	check(err)
-	researchPages = append(researchPages, magicianPages...)
+	for _, characterNameClass := range characterNamesSplit {
 
-	// // Read Necromancer character
-	necromancerPages, err := parseFile(researchNecromancerName, Necromancer)
-	check(err)
-	researchPages = append(researchPages, necromancerPages...)
+		characterNameClassSplit := strings.Split(characterNameClass, ":")
+		if len(characterNameClassSplit) != 2 {
+			log.Printf("WARNING: Invalid character name and class tuple: %s\n", characterNameClass)
+			continue
+		}
 
-	// Read Wizard character
-	wizardPages, err := parseFile(researchWizardName, Wizard)
-	check(err)
-	researchPages = append(researchPages, wizardPages...)
+		characterPages, err := parseFile(characterNameClassSplit[0], Class(characterNameClassSplit[1]))
+		check(err)
+		researchPages = append(researchPages, characterPages...)
+	}
 
 	log.Printf("Found %d Research Items\n", len(researchPages))
 
@@ -128,24 +121,32 @@ func main() {
 		classPages[researchPage.Class] = append(classPages[researchPage.Class], researchPage)
 	}
 
-	fmt.Printf("\n==== Enchanter Pages ====\n")
-	for _, researchPage := range classPages[Enchanter] {
-		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+	if len(classPages[Enchanter]) > 0 {
+		fmt.Printf("\n==== Enchanter Pages ====\n\n")
+		for _, researchPage := range classPages[Enchanter] {
+			fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+		}
 	}
 
-	fmt.Printf("\n==== Magician Pages ====\n\n")
-	for _, researchPage := range classPages[Magician] {
-		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+	if len(classPages[Magician]) > 0 {
+		fmt.Printf("\n==== Magician Pages ====\n\n")
+		for _, researchPage := range classPages[Magician] {
+			fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+		}
 	}
 
-	fmt.Printf("\n==== Necromancer Pages ====\n\n")
-	for _, researchPage := range classPages[Necromancer] {
-		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+	if len(classPages[Necromancer]) > 0 {
+		fmt.Printf("\n==== Necromancer Pages ====\n\n")
+		for _, researchPage := range classPages[Necromancer] {
+			fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+		}
 	}
 
-	fmt.Printf("\n==== Wizard Pages ====\n\n")
-	for _, researchPage := range classPages[Wizard] {
-		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+	if len(classPages[Wizard]) > 0 {
+		fmt.Printf("\n==== Wizard Pages ====\n\n")
+		for _, researchPage := range classPages[Wizard] {
+			fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
+		}
 	}
 }
 
@@ -159,7 +160,6 @@ func parseFile(characterName string, class Class) (respitems []ResearchItem, err
 	}
 
 	lines := strings.Split(string(readBytes), "\n")
-	// fmt.Printf("%s: %d lines\n", characterName, len(lines))
 
 	for _, line := range lines {
 		if line == "" {

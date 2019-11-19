@@ -32,7 +32,7 @@ type BlacklistItem struct {
 }
 
 var (
-	everquestDirectory = flag.String("eqdirectory", "C:\\Users\\thegr\\Desktop\\Project1999", "Everquest Directory")
+	everquestDirectory = flag.String("eqdirectory", "C:\\Project1999", "Everquest Directory")
 	characterNames     = flag.String("characters", "Researchchanter:Enchanter,Researchmage:Magician,Researchnecro:Necromancer,Researchwizard:Wizard", "Character inventory files to parse")
 
 	researchPageDB     = []ResearchItem{}

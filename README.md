@@ -1,9 +1,9 @@
-NOTE: Currently the character names and classes are hardcoded, so this will only work out of the box with the 4 inventory files present in your Everquest directory.
+Configurable eqdirectory and characters. Charaters is a comma separated list of colon separated character names and classes.
 
 Install golang and exectute like this:
 
 ```
-go run main.go -eqdirectory="C:\\Project1999"
+go run main.go -eqdirectory="C:\\Project1999" -characters "Researchchanter:Enchanter,Researchmage:Magician,Researchnecro:Necromancer,Researchwizard:Wizard"
 ```
 
 Or build it and run it like this:
@@ -11,5 +11,5 @@ Or build it and run it like this:
 ```
 go build
 
-./eq-inventoryfile-parser -eqdirectory="C:\\Project1999"
+./eq-inventoryfile-parser.exe -eqdirectory="C:\\Project1999"-characters "Researchchanter:Enchanter,Researchmage:Magician,Researchnecro:Necromancer,Researchwizard:Wizard"
 ```

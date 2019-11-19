@@ -130,19 +130,7 @@ func main() {
 
 	fmt.Printf("\n==== Enchanter Pages ====\n")
 	for _, researchPage := range classPages[Enchanter] {
-		if strings.HasPrefix(researchPage.Name, "Part of ") {
-			// TODO: Feature: Fix the left/right logic because it doesn't work for even/odd
-			if researchPage.ID%2 == 0 {
-				fmt.Printf("%dx\t%s (Left)\n", researchPage.Qty, researchPage.Name)
-			} else {
-				fmt.Printf("%dx\t%s (Right)\n", researchPage.Qty, researchPage.Name)
-			}
-		} else if strings.Contains(researchPage.Name, "Faded") {
-			// TODO: Feature: Translate the ID to whichever page it corresponds to
-			fmt.Printf("%dx\t%s (%d)\n", researchPage.Qty, researchPage.Name, researchPage.ID)
-		} else {
-			fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
-		}
+		fmt.Printf("%dx\t%s\n", researchPage.Qty, researchPage.Name)
 	}
 
 	fmt.Printf("\n==== Magician Pages ====\n\n")

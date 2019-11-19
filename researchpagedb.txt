@@ -1,25 +1,25 @@
 id,name,class
 11700,Velishoul's Tome Pg. 108,Enchanter
-11701,Faded Velishoul's Tome Page,Enchanter
+11701,Velishoul's Tome Pg. 108 (Faded),Enchanter
 11702,Velishoul's Tome Pg. 109,Enchanter
-11704,Salil's Writ Pg. 60,Enchanter
-11705,Salil's Writ Pg. 64,Enchanter
-11706,Faded Salil's Writ Page,Enchanter
-11707,Salil's Writ Pg. 64,Enchanter
-11708,Salil's Writ Pg. 90,Enchanter
-11709,Salil's Writ Pg. 90,Enchanter
-11710,Faded Salil's Writ Page,Enchanter
-11711,Salil's Writ Pg. 153,Enchanter
-11712,Faded Salil's Writ Page,Enchanter
-11713,Salil's Writ Pg. 153,Enchanter
-11714,Salil's Writ Pg. 174,Enchanter
-11715,Salil's Writ Pg. 174,Enchanter
-11716,Salil's Writ Pg. 282,Enchanter
-11717,Salil's Writ Pg. 282,Enchanter
-11718,Salil's Writ Pg. 288,Enchanter
-11719,Salil's Writ Pg. 288,Enchanter
-11720,Faded Salil's Writ Page,Enchanter
-11721,Faded Salil's Writ Page,Enchanter
+11704,Salil's Writ Pg. 60 (Right),Enchanter
+11705,Salil's Writ Pg. 64 (Left),Enchanter
+11706,Salil's Writ Pg. 64 (Left - Faded),Enchanter
+11707,Salil's Writ Pg. 64 (Right),Enchanter
+11708,Salil's Writ Pg. 90 (Left),Enchanter
+11709,Salil's Writ Pg. 90 (Right),Enchanter
+11710,Salil's Writ Pg. 90 (Right - Faded),Enchanter
+11711,Salil's Writ Pg. 153 (Left),Enchanter
+11712,Salil's Writ Pg. 153 (Left - Faded),Enchanter
+11713,Salil's Writ Pg. 153 (Right),Enchanter
+11714,Salil's Writ Pg. 174 (Left),Enchanter
+11715,Salil's Writ Pg. 174 (Right),Enchanter
+11716,Salil's Writ Pg. 282 (Left),Enchanter
+11717,Salil's Writ Pg. 282 (Right),Enchanter
+11718,Salil's Writ Pg. 288 (Left),Enchanter
+11719,Salil's Writ Pg. 288 (Right),Enchanter
+11720,Salil's Writ Pg. 282 (Right - Faded),Enchanter
+11721,Salil's Writ Pg. 288 (Right - Faded),Enchanter
 11722,Nilitim's Grimoire Pg. 35,Enchanter
 11723,Nilitim's Grimoire Pg. 36,Enchanter
 11724,Nilitim's Grimoire Pg. 115,Enchanter
@@ -106,6 +106,7 @@ id,name,class
 11831,Words of the Sentient (Beza),Necromancer
 11832,Words of Recluse,Necromancer
 11833,Words of Cloudburst,Necromancer
+11834,Words of Mistbreath,Necromancer
 11835,Words of Detachment,Necromancer
 11836,Words of Haunting,Necromancer
 11840,Words of Acquisition (Azia),Necromancer
@@ -115,27 +116,30 @@ id,name,class
 11856,Words of the Spectre,Necromancer
 11871,Words of Detention,Magician
 11882,Salil's Writ Pg. 60,Enchanter
+15055,Spell: Cornucopia,Magician
+15056,Spell: Everfount,Magician
+15364,Spell: Banshee Aura,Necromancer
 15498,Spell: Lesser Summoning: Fire,Magician
+15569,Spell: Summoning: Earth,Magician
 16024,Words of Derivation,Necromancer
 16039,Words of Cazic-Thule,Necromancer
 16054,Rune of Nagafen,Wizard
-16068,Part of Tasarin's Grimoire Pg. 23,Enchanter
-16069,Part of Tasarin's Grimoire Pg. 23,Enchanter
-16070,Part of Tasarin's Grimoire Pg. 24,Enchanter
-16071,Part of Tasarin's Grimoire Pg. 24,Enchanter
-16072,Part of Tasarin's Grimoire Pg. 26,Enchanter
-16073,Part of Tasarin's Grimoire Pg. 26,Enchanter
-16074,Part of Tasarin's Grimoire Pg. 30,Enchanter
-16075,Part of Tasarin's Grimoire Pg. 30,Enchanter
-16076,Part of Tasarin's Grimoire Pg. 312,Enchanter
-16077,Part of Tasarin's Grimoire Pg. 312,Enchanter
-16078,Part of Tasarin's Grimoire Pg. 375,Enchanter
-16079,Part of Tasarin's Grimoire Pg. 375,Enchanter
-16080,Part of Tasarin's Grimoire Pg. 390,Enchanter
-16081,Part of Tasarin's Grimoire Pg. 390,Enchanter
+16069,Part of Tasarin's Grimoire Pg. 23 (Right),Enchanter
+16070,Part of Tasarin's Grimoire Pg. 24 (Left),Enchanter
+16071,Part of Tasarin's Grimoire Pg. 24 (Right),Enchanter
+16072,Part of Tasarin's Grimoire Pg. 26 (Left),Enchanter
+16073,Part of Tasarin's Grimoire Pg. 26 (Right),Enchanter
+16074,Part of Tasarin's Grimoire Pg. 30 (Left),Enchanter
+16075,Part of Tasarin's Grimoire Pg. 30 (Right),Enchanter
+16076,Part of Tasarin's Grimoire Pg. 312 (Left),Enchanter
+16077,Part of Tasarin's Grimoire Pg. 312 (Right),Enchanter
+16078,Part of Tasarin's Grimoire Pg. 375 (Left),Enchanter
+16079,Part of Tasarin's Grimoire Pg. 375 (Right),Enchanter
+16080,Part of Tasarin's Grimoire Pg. 390 (Left),Enchanter
+16081,Part of Tasarin's Grimoire Pg. 390 (Right),Enchanter
 16082,Velishoul's Tome Pg. 8,Enchanter
 16083,Velishoul's Tome Pg. 9,Enchanter
-16084,Faded Velishoul's Tome Page,Enchanter
+16084,Velishoul's Tome Page 16 (Faded),Enchanter
 16085,Velishoul's Tome Pg. 16,Enchanter
 16086,Velishoul's Tome Pg. 17,Enchanter
 16087,Velishoul's Tome Pg. 43,Enchanter
@@ -144,4 +148,5 @@ id,name,class
 16091,Velishoul's Tome Pg. 68,Enchanter
 16092,Velishoul's Tome Pg. 75,Enchanter
 16093,Velishoul's Tome Pg. 76,Enchanter
-11834,Words of Mistbreath,Necromancer
+16417,Spell: Hungry Earth,Necromancer
+16418,Spell: Voice Graft,Necromancer

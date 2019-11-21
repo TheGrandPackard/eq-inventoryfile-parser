@@ -109,6 +109,7 @@ id,name,class
 11834,Words of Mistbreath,Necromancer
 11835,Words of Detachment,Necromancer
 11836,Words of Haunting,Necromancer
+11839,Words of the Incorporeal,Necromancer
 11840,Words of Acquisition (Azia),Necromancer
 11842,Words of Parasitism,Necromancer
 11849,Words of Efficacy,Necromancer
@@ -116,14 +117,17 @@ id,name,class
 11856,Words of the Spectre,Necromancer
 11871,Words of Detention,Magician
 11882,Salil's Writ Pg. 60,Enchanter
+15021,Spell: Berserker Strength,Enchanter
 15055,Spell: Cornucopia,Magician
 15056,Spell: Everfount,Magician
+15185,Spell: Tepid Deeds,Enchanter
 15364,Spell: Banshee Aura,Necromancer
 15498,Spell: Lesser Summoning: Fire,Magician
 15569,Spell: Summoning: Earth,Magician
 16024,Words of Derivation,Necromancer
 16039,Words of Cazic-Thule,Necromancer
 16054,Rune of Nagafen,Wizard
+16068,Part of Tasarin's Grimoire Pg. 23 (Left),Enchanter
 16069,Part of Tasarin's Grimoire Pg. 23 (Right),Enchanter
 16070,Part of Tasarin's Grimoire Pg. 24 (Left),Enchanter
 16071,Part of Tasarin's Grimoire Pg. 24 (Right),Enchanter
@@ -148,5 +152,9 @@ id,name,class
 16091,Velishoul's Tome Pg. 68,Enchanter
 16092,Velishoul's Tome Pg. 75,Enchanter
 16093,Velishoul's Tome Pg. 76,Enchanter
+16217,Spell: Mesmerization,Enchanter
+16219,Spell: Color Shift,Enchanter
+16221,Spell: Strip Enchantment,Enchanter
 16417,Spell: Hungry Earth,Necromancer
 16418,Spell: Voice Graft,Necromancer
+16428,Spell: Haunting Corpse,Necromancer
